@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/ContaAzul/creditcard.js.svg)](https://david-dm.org/Semantic-Org/ContaAzul/creditcard.js)
 [![devDependency Status](https://david-dm.org/ContaAzul/creditcard.js/dev-status.svg)](https://david-dm.org/ContaAzul/creditcard.js#info=devDependencies)
 
-> A simple credit cards validation library in JavaScript.
+> A simple library for credit-card validation in JavaScript
 
 <img src="assets/images/credit-card-logo.png" alt="creditcard.js" />
 
@@ -46,23 +46,15 @@ var obj = new creditcard();
 obj.getCreditCardNameByNumber('4539578763621486'); // returns 'Visa'
 ```
 
-### Methods
+### Functions
 
-#### obj`.validadeExpiryDate()`
 
-Returns whether the value is `true` or `false`.
-
-#### obj`.validadeCreditCard()`
-
-Returns whether the value is `true` or `false`.
-
-#### obj`.validadeSecuryCode()`
-
-Returns whether the value is `true` or `false`.
-
-#### obj`.getCreditCardNameByNumber()`
-
-Returns a `String` with the credit card name.
+| Name | Returns |
+|---|---|
+|`CreditCard#isValid()`| `Boolean `|
+|`CreditCard#isValidExpirationDate()`| `Boolean `|
+|`CreditCard#isValidSecuryCode()`| `Boolean `|
+|`CreditCard#getCreditCardNameByNumber()`| `String `|
 
 ## Browser support
 
